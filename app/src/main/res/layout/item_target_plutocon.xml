@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1"
+
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_vertical"
+                android:paddingBottom="3dp"
+                android:paddingLeft="16dp"
+                android:text="Target Plutocon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_small" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:indeterminate="true"
+                android:layout_marginRight="16dp" />
+
+        </LinearLayout>
+
+
+        <com.kongtech.plutocon.template.view.AttrItemView
+            android:id="@+id/aivTargetName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:attrName="Plutocon Name"
+            app:isChangeable="true" />
+
+        <com.kongtech.plutocon.template.view.AttrItemView
+            android:id="@+id/aivTargetAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:attrName="Mac Address"
+            app:isChangeable="false" />
+
+        <com.kongtech.plutocon.template.view.AttrItemView
+            android:id="@+id/aivTargetStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:attrName="Status"
+            app:isChangeable="false" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
