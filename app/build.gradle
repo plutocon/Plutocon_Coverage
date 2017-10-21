@@ -8,8 +8,8 @@ android {
         applicationId "com.kongtech.plutocon.template.coverage"
         minSdkVersion 18
         targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.1"
     }
     buildTypes {
         release {
@@ -25,5 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
     compile 'com.android.support:cardview-v7:23.1.1'
-    compile 'com.kongtech.plutocon.sdk:plutocon_sdk:1.0.3'
+    compile 'com.kongtech.plutocon.sdk:plutocon_sdk:1.1.0'
 }
